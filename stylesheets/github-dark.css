@@ -113,4 +113,6 @@
 .pl-mo /* meta.output */ {
   color: #264ec5;
 }
-
+.page-text{
+    font-family: 'Philosopher', sans-serif;
+}
