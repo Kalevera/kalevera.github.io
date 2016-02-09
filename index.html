@@ -13,16 +13,14 @@
   </head>
 
   <body class="page-text">
-      <header>
-          <div class="container-fluid">
-              <nav class=" mdl-body">
-              <ul>
-              <a class="nav-home" href="/"><img src="./images/Klog.svg" /></a>
-              <a href="/cs/pblog">Programming</a>
-              <a href="/lh/lhbog">Life Happens</a>
-              </ul>
-          </nav>
-              <div class="row">
+
+      <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--waterfall">
+    <!-- Top row, always visible -->
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="page-text mdl-layout-title">Kalevera.github.io</span>
+        <div class="page-text row">
                   <div class="col-md-10">
                       <h1>Kalevera.GitHub.io</h1>
                   </div>
@@ -30,13 +28,44 @@
                       <a class="nav-home right" href="#logotop"><img src="./images/Klog.svg" /></a>
                   </div>
               </div>
-          </div>
-    </header>
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon"
+               for="waterfall-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="sample"
+                 id="waterfall-exp">
+        </div>
+      </div>
+    </div>
+    <!-- Bottom row, not visible on scroll -->
+    <div class="mdl-layout__header-row">
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
 
-    <div class="container">
-      <section id="main_content">
-        <h2>
-<a id="kalevera" class="anchor mdl-js-ripple-effect" href="#kalevera" aria-hidden="true"><span class="octicon octicon-link"></span></a>Kalevera</h2>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="/">Home</a>
+        <a class="mdl-navigation__link" href="/cs/pblog">Programming</a>
+        <a class="mdl-navigation__link" href="/lh/lhblog">Life Happens</a>
+     <!--   <a class="mdl-navigation__link" href="/resume">soon</a>-->
+      </nav>
+    </div>
+  </header>
+  <div class="page-text mdl-layout__drawer">
+    <span class="mdl-layout-title">Kalevera.github.io</span>
+    <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="/">Home</a>
+        <a class="mdl-navigation__link" href="/cs/pblog">Programming</a>
+        <a class="mdl-navigation__link" href="/lh/lhblog">Life Happens</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here -->
+        <h2 class="mdl-js-ripple-effect">
+<a id="kalevera" class="anchor " href="#kalevera" aria-hidden="true"><span class="octicon octicon-link"></span></a>Kalevera</h2>
 
 <p>Welcome to my site, "Kalevera" is my online handle you can also find me on twitter <a href="https://twitter.com/theoneravenous">@TheOneRavenous</a>, or <a href="https://github.com/Kalevera" ><span></span>on GitHub</a>. If you're interested in my resume, or want to open a discussion about almost anything fell free to reach out via twitter.</p>
 
@@ -65,8 +94,9 @@
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
 <p>Having trouble with with the site? reach out via the gituhub repo issues <a href="https://github.com/kalevera/kalevera.github.io">Kalevera.github.io</a> thanks and enjoy.</p>
-      </section>
-    </div>
+     </div>
+  </main>
+</div>
 
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
