@@ -14,13 +14,13 @@
 
   <body class="page-text">
 
-      <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+      <div class="mdl-layout-waterfall mdl-layout mdl-js-layout">
   <header class="mdl-layout__header mdl-layout__header--waterfall">
     <!-- Top row, always visible -->
     <div class="mdl-layout__header-row">
       <!-- Title -->
       <span class="page-text mdl-layout-title">Kalevera.github.io</span>
-      <a class="nav-home right" href="#logotop"><img src="./images/Klog.svg" /></a>
+      <a class="nav-home right" href="#logotop"><img src="./images/Klog2.0.svg" /></a>
       <div class="mdl-layout-spacer"></div>
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
@@ -41,9 +41,9 @@
 
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="/">Home</a>
-          <a class="mdl-navigation__link" href="/climbing_life/climbing_page">Climbing</a>
-        <a class="mdl-navigation__link" href="/cs/pblog">Programming</a>
-        <a class="mdl-navigation__link" href="/lh/lhblog">Life Happens</a>
+          <a class="mdl-navigation__link",ng-hide, href="/climbing_life/climb_page">Climbing</a>
+        <a class="mdl-navigation__link",ng-hide,  href="/cs/pblog">Programming</a>
+        <a class="mdl-navigation__link" ,ng-hide, href="/lh/lhblog">Life Happens</a>
      <!--   <a class="mdl-navigation__link" href="/resume">soon</a>-->
       </nav>
     </div>
@@ -52,44 +52,20 @@
     <span class="mdl-layout-title">Kalevera.github.io</span>
     <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="/">Home</a>
-         <a class="mdl-navigation__link" href="/climbing_life/climbing_page">Climbing</a>
-        <a class="mdl-navigation__link" href="/cs/pblog">Programming</a>
-        <a class="mdl-navigation__link" href="/lh/lhblog">Life Happens</a>
+         <a class="mdl-navigation__link" ,ng-hide,  href="/climbing_life/climbing_page">Climbing</a>
+        <a class="mdl-navigation__link" ,ng-hide, href="/cs/pblog">Programming</a>
+        <a class="mdl-navigation__link" ,ng-hide, href="/lh/lhblog">Life Happens</a>
     </nav>
   </div>
   <main class="mdl-layout__content">
     <div class="page-content"><!-- Your content goes here -->
-        <h2 class="mdl-js-ripple-effect">
-<a id="kalevera" class="anchor " href="#kalevera" aria-hidden="true"><span class="octicon octicon-link"></span></a>Kalevera</h2>
+        <div onscroll="scroller()" ng-controller="storyController" class="main-story">
+            <div ng-repeat="thing in stories" card-holder class=" mv-ripple mv-card-type mv-card-shadow mv-card-active"></div>
+            <card-image  class="card-image mv-card-image"></card-image>
+            <card-story class="mv-card-story"></card-story>
 
-<p>Welcome to my site, "Kalevera" is my online handle you can also find me on twitter <a href="https://twitter.com/theoneravenous">@TheOneRavenous</a>, or <a href="https://github.com/Kalevera" ><span></span>on GitHub</a>. If you're interested in my resume, or want to open a discussion about almost anything fell free to reach out via twitter.</p>
-
-<h3>
-<a id="rock-climbing mdl-js-ripple-effect" class="anchor" href="/climbing_life/climbing_page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rock Climbing!</h3>
-
-<p>I have been sport climbing for 11 years, like most of the professionals that climb it represents an outlet for me to let go of life, push myself, and enjoy the beauty of the outdoors, among other things climbing represent camaraderie, dedication, success, and failure. In my 11 years of climbing I have gone through what I call the "<i>climbing cycle</i>" multiple times, the cycle is simple there are climbing highs and climbing lows.</p>
-
-<h3>
-<a id="personal-projects mdl-js-ripple-effect" class="anchor" href="#persoal-projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Personal Projects</h3>
-
-<p>This section will mainly be for programming projects but from time to time will feature my work in mechanical engineering and desalination.</p><br />
-<p>
-    I currently don't have many public projects to display, I'm currently working on a parallax page design for a band website, as well as a SPA site for the same band. They will have the option to go live with either page that they like and if they choose to update their site late they will still have access to the other site.
-</p><br />
-          <p>
-          My last and most recent project leverages the google tasks API, the project did not require much flexability so it is a simple application (relatively seaking) which requests authorization from the user to access the users google tasks, it then finds the first task list of the user and then populates that list onto the page. The application was integrated into an existing build for a magic mirror. The application I developed was to become apart of the overall application.
-          </p>
-
-<h3>
-<a id="life-happens" class="anchor" href="#life-happens" aria-hidden="true"><span class="octicon octicon-link"></span></a>Life Happens</h3>
-
-<p>Life it happens, if you enjoy optomisim or would like to be more optomistic then this section might be for you. As I eperience life and situations where I need to get beyond my own ego to help a situation, i'll write about it in the Life Happens</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with with the site? reach out via the gituhub repo issues <a href="https://github.com/kalevera/kalevera.github.io">Kalevera.github.io</a> thanks and enjoy.</p>
-     </div>
+        </div>
+      </div>
   </main>
 </div>
 
@@ -102,7 +78,11 @@
               var pageTracker = _gat._getTracker("UA-70998017-1");
             pageTracker._trackPageview();
             } catch(err) {}
-          </script>
+      </script>
 
-  </body>
+    </body>
+    <script type="application/json" src="./js/stories.json"></script>
+    <script type="text/javascript" src="./js/front_end.js"></script>
+    <script type="text/javascript" src="./js/mu.js"></script>
+    <script type="text/javascript" src="./js/storyDirective.js"></script>
 </html>

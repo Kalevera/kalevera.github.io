@@ -1,0 +1,26 @@
+{"stories":[
+    {
+            "id":"053297656945947854",
+            "title":"Kalevera.github.io",
+            "published": "January 7, 2016",
+            "story":"Welcome to my site, I am Roberto Vega and I enjoy coding cross platform applications, I have been working exclusively with the MEAN stack to learn about front-end and back end development. What I have learned about AngularJs and front-end coding has enabled me to build this front-end single page application. With my knowledge of client server communications and familiarity with GitHub, I have been able to store these articles in JSON objects and retrieve those using XHR techniques. This page is possible by using my knowledge and it is hosted on GitHub! In order to give me a playground and space to create new widgets and test pieces I tested and developed in a node environment. When all done I use the powers of Git to push to GitHub. If you are interested in working with me, reach out via GitHub or e-mail and finally yet importantly if you enjoy the site please send me a tweet to let me know.",
+            "author": "Roberto Vega",
+            "imgUrl":"./images/kalevera.jpg"
+        },
+    {
+            "id":"778399192204585",
+            "title":"Rock Climbing",
+            "published": "January 7, 2016",
+            "story":"I have been sport climbing for 11 years, like most of the professionals that climb it represents an outlet for me to let go of life, push myself, and enjoy the beauty of the outdoors, among other things climbing represent camaraderie, dedication, success, and failure. In my 11 years of climbing I have gone through what I call the \"climbing cycle\" multiple times, the cycle is simple there are climbing highs and climbing lows.",
+            "author": "Roberto Vega",
+            "imgUrl":"http://i.imgur.com/Y7xMXX7.jpg"
+        },
+    {
+            "id":"647759822749446",
+            "title":"Personal Projects",
+            "published": "January 7, 2016",
+            "story":"This section will mainly be for programming projects but from time to time will feature my work in mechanical engineering and desalination.\r I currently don't have many public projects to display, I'm currently working on a parallax page design for a band website, as well as a SPA site for the same band. They will have the option to go live with either page that they like and if they choose to update their site late they will still have access to the other site. My last and most recent project leverages the google tasks API, the project did not require much flexability so it is a simple application (relatively seaking) which requests authorization from the user to access the users google tasks, it then finds the first task list of the user and then populates that list onto the page. The application was integrated into an existing build for a magic mirror. The application I developed was to become apart of the overall application.",
+            "author": "Roberto Vega",
+            "imgUrl":"http://i.imgur.com/NqdrkKS.jpg"
+        }
+]}
