@@ -5,7 +5,7 @@
             "published": "January 7, 2016",
             "story":"Welcome to my site, I am Roberto Vega and I enjoy coding cross platform applications, I have been working exclusively with the MEAN stack to learn about front-end and back end development. What I have learned about AngularJs and front-end coding has enabled me to build this front-end single page application. With my knowledge of client server communications and familiarity with GitHub, I have been able to store these articles in JSON objects and retrieve those using XHR techniques. This page is possible by using my knowledge and it is hosted on GitHub! In order to give me a playground and space to create new widgets and test pieces I tested and developed in a node environment. When all done I use the powers of Git to push to GitHub. If you are interested in working with me, reach out via GitHub or e-mail and finally yet importantly if you enjoy the site please send me a tweet to let me know.",
             "author": "Roberto Vega",
-            "imgUrl":"./images/kalevera.jpg"
+            "imgUrl":"./images/Kalevera.jpg"
         },
     {
             "id":"778399192204585",
