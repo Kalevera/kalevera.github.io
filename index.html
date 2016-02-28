@@ -62,11 +62,8 @@
   </div>
   <main class="mdl-layout__content">
     <div class="page-content"><!-- Your content goes here -->
-        <div onscroll="scroller()" ng-controller="storyController" class="main-story">
-            <div ng-repeat="thing in stories" card-holder class=" mv-ripple mv-card-type mv-card-shadow mv-card-active"></div>
-            <card-image  class="card-image mv-card-image"></card-image>
-            <card-story class="mv-card-story"></card-story>
-
+        <div ng-controller="storyController" class="main-story">
+            <div card-holder ng-repeat="thing in stories"  class=" mv-ripple mv-card-type mv-card-shadow mv-card-active"></div>
         </div>
       </div>
   </main>
