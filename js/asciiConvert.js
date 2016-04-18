@@ -15,14 +15,9 @@
             }
         }
     }])
-    .controller('asciiConvertController',['$scope','storyFactory',function($scope,storyFactory){
-        storyFactory.get().success(function(data){
-            $scope.stories = data["stories"];
-
-            console.log($scope.stories);
-        }).error(function(err){
-            console.log('Error: ' + err);
-        })
+    .controller('asciiConvertController',['$scope','asciiFactory',function($scope,asciiFactory){
+     
+        
     }]).directive('asciiConvertCard',function(){
         function link (scope, element, attrs){
 
