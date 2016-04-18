@@ -1,7 +1,7 @@
 (function(){
     'use-strict'
-	var Stories = angular.module("storyDirective",[])
-    .factory('storyFactory',['$http',function($http){
+	var asciiConvert = angular.module("asciiDirective",[])
+    .factory('asciiFactory',['$http',function($http){
         return{
             get:function(){
                 return $http.get('/js/stories.json');
@@ -15,7 +15,7 @@
             }
         }
     }])
-    .controller('storyController',['$scope','storyFactory',function($scope,storyFactory){
+    .controller('asciiConvertController',['$scope','storyFactory',function($scope,storyFactory){
         storyFactory.get().success(function(data){
             $scope.stories = data["stories"];
 
@@ -23,14 +23,14 @@
         }).error(function(err){
             console.log('Error: ' + err);
         })
-    }]).directive('cardHolder',function(){
+    }]).directive('asciiConvertCard',function(){
         function link (scope, element, attrs){
 
         }
         return{
             link: link,
             restirct:'E',
-            templateUrl: '/u/my-card.html'
+            templateUrl: '/u/ascii-convert-card.html'
         };
     })
 })();

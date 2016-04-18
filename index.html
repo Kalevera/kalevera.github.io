@@ -20,7 +20,7 @@
 
     <body class="page-text">
 
-        <div class="mdl-layout-waterfall mdl-layout mdl-js-layout">
+        <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
             <header class="mdl-layout__header mdl-layout__header--waterfall">
                 <!-- Top row, always visible -->
                 <div class="mdl-layout__header-row">
@@ -66,6 +66,9 @@
             <center>
             <main class="mdl-layout__content">
                 <div class="page-content"><!-- Your content goes here -->
+                    <div ng-controller="asciiConvertController" class="asii-convert-card">
+                        <div ascii-convert-card class="mv-ripple mv-card-type mv-card-shadow"></div>
+                    </div>
                     <div ng-controller="storyController" class="main-story">
                         <div card-holder ng-repeat="thing in stories"  class=" mv-ripple mv-card-type mv-card-shadow mv-card-active"></div>
                     </div>
