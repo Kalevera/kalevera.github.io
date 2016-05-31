@@ -1,4 +1,6 @@
 <div>
-    <label>Enter an Array of ascii dec to convert the message</label>
-    <input type="text"/>
+    <label>Enter an array of ascii numbers to convert the array to a human readable message</label>
+    <input type="text" ng-model="asciiArray" id="asciiInput"/>
+    <button type="button" ng-click="asciiSpliceString(asciiArray)">click to convert</button>
+    <p id="messageConverted"></p>
 </div>
